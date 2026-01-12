@@ -217,6 +217,9 @@
     transition: all 0.2s ease;
     border: 1px solid var(--glass-border);
     min-width: 100px;
+    outline: none;
+    /* Remove click borders */
+    user-select: none;
 }
 
 .home-container .stack-card:hover {
@@ -226,13 +229,19 @@
 .home-container .stack-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.7);
+    /* More opaque white for better contrast */
+    backdrop-filter: blur(4px);
+    /* Blur the background image */
     z-index: 1;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
 }
 
 .home-container .stack-card:hover .stack-overlay {
-    background: rgba(255, 255, 255, 0);
+    background: transparent;
+    /* Fully vivid on hover */
+    backdrop-filter: none;
+    /* No blur on hover */
 }
 
 .home-container .stack-name {
@@ -240,8 +249,8 @@
     z-index: 2;
     font-weight: 700;
     font-size: 0.85rem;
-    color: #111;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    color: var(--text-main);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
 
 /* ===== Summary Section ===== */
@@ -259,9 +268,9 @@
     transition: all 0.2s ease;
 }
 
-.home-container .summary-card:hover {
+/* .home-container .summary-card:hover {
     border-color: var(--primary);
-}
+} */
 
 .home-container .summary-card h3 {
     font-family: var(--font-heading);

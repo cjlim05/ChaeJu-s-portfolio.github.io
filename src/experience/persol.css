@@ -1,6 +1,6 @@
 /* ===============================
    PAGE WRAPPER & SCOPED STYLES
-=============================== */
+ =============================== */
 .persol {
     max-width: 1200px;
     margin: 0 auto;
@@ -97,7 +97,7 @@
 }
 
 .persol .back-link:hover {
-    color: var(--primary);
+    color: var(--primary);color: var(--primary);
     border-color: var(--primary);
 }
 
