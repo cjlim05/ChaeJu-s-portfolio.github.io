@@ -1,40 +1,12 @@
-:root {
-    --bg-dark: #0f172a;
-    --bg-card: rgba(30, 41, 59, 0.5);
-    --primary: #38bdf8;
-    --secondary: #818cf8;
-    --accent: #2dd4bf;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glow: rgba(56, 189, 248, 0.4);
-
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-body);
-}
-
-body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
-    overflow-x: hidden;
-    min-height: 100vh;
-}
-
-/* Background Glow */
+/* Background Glow - Simplified for White Theme */
 .background-glow {
     position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 10%, #f1f5f9 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, #eff6ff 0%, transparent 40%);
     z-index: -1;
     pointer-events: none;
 }
@@ -55,14 +27,11 @@ body {
     gap: 2.5rem;
 }
 
-/* Glass Panel Utility */
+/* Glass Panel Utility - Updated for White Theme */
 .home-container .glass-panel {
     background: var(--bg-card);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--glass-border);
     border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
 /* ===== Hero Section ===== */
@@ -104,30 +73,19 @@ body {
     height: 220px;
     border-radius: 24px;
     object-fit: cover;
-    border: 3px solid rgba(56, 189, 248, 0.4);
+    border: 1px solid var(--glass-border);
     position: relative;
     z-index: 2;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
 }
 
 .home-container .profile-img:hover {
-    transform: scale(1.02) translateY(-3px);
     border-color: var(--primary);
 }
 
 .home-container .profile-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background: var(--glow);
-    border-radius: 24px;
-    filter: blur(45px);
-    z-index: 1;
-    opacity: 0.5;
+    display: none;
+    /* Removed for clean look */
 }
 
 .home-container .name-title {
@@ -158,7 +116,7 @@ body {
 
 .home-container .intro-area-inline {
     padding-bottom: 1.2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid var(--glass-border);
     margin-bottom: 0.5rem;
 }
 
@@ -256,36 +214,34 @@ body {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+    border: 1px solid var(--glass-border);
     min-width: 100px;
 }
 
 .home-container .stack-card:hover {
-    transform: translateY(-3px);
     border-color: var(--primary);
-    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3);
 }
 
 .home-container .stack-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(255, 255, 255, 0.2);
     z-index: 1;
     transition: background 0.3s;
 }
 
 .home-container .stack-card:hover .stack-overlay {
-    background: rgba(15, 23, 42, 0.4);
+    background: rgba(255, 255, 255, 0);
 }
 
 .home-container .stack-name {
     position: relative;
     z-index: 2;
     font-weight: 700;
-    font-size: 0.9rem;
-    color: #fff;
+    font-size: 0.85rem;
+    color: #111;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* ===== Summary Section ===== */
@@ -297,15 +253,14 @@ body {
 
 .home-container .summary-card {
     padding: 1.5rem;
-    background: rgba(30, 41, 59, 0.3);
+    background: #ffffff;
     border: 1px solid var(--glass-border);
     border-radius: 24px;
-    transition: transform 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .home-container .summary-card:hover {
-    transform: translateY(-3px);
-    border-color: rgba(56, 189, 248, 0.2);
+    border-color: var(--primary);
 }
 
 .home-container .summary-card h3 {
@@ -335,11 +290,11 @@ body {
 }
 
 .home-container .list-link span {
-    color: white;
+    color: var(--text-main);
 }
 
 .home-container .list-link:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: #f8fafc;
 }
 
 .home-container .list-thumb {
@@ -347,7 +302,7 @@ body {
     height: 38px;
     border-radius: 6px;
     object-fit: cover;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
 }
 
 .home-container .list-text {

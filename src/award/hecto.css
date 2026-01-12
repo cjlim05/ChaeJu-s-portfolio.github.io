@@ -2,20 +2,20 @@
    GLOBAL VARIABLES
 =============================== */
 :root {
-    --bg-dark: #0f172a;
-    --bg-card: rgba(30, 41, 59, 0.7);
-    --primary: #38bdf8;
-    --secondary: #818cf8;
-    --accent: #2dd4bf;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --bg-white: #ffffff;
+    --bg-card: #ffffff;
+    --primary: #2563eb;
+    --secondary: #4f46e5;
+    --accent: #1e293b;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+    --glass-border: #e5e7eb;
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
 
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-white);
     color: var(--text-main);
     font-family: var(--font-body);
 }
@@ -54,7 +54,7 @@ body {
     height: 40vh;
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
 
@@ -73,7 +73,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0) 60%);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 60%);
 }
 
 .hecto-award .hero-overlay {
@@ -93,17 +93,16 @@ body {
     font-size: 3.5rem;
     font-weight: 800;
     margin: 0;
-    color: white;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    color: var(--text-main);
     letter-spacing: -0.02em;
 }
 
 .hecto-award .hero-subtitle {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-muted);
     margin-top: 1rem;
     max-width: 600px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .hecto-award .back-link {
@@ -111,20 +110,20 @@ body {
     top: 2rem;
     left: 2rem;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
     padding: 0.5rem 1rem;
     border-radius: 100px;
-    color: white;
+    color: var(--text-main);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.2s;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
 }
 
 .hecto-award .back-link:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: white;
     transform: translateX(-4px);
 }
 
@@ -132,11 +131,12 @@ body {
    SECTIONS (Scoped)
 =============================== */
 .hecto-award .section {
-    background: rgba(30, 41, 59, 0.4);
-    border-radius: 20px;
+    background: #ffffff;
+    border-radius: 24px;
     padding: 3.5rem;
     margin-bottom: 4rem;
     border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .hecto-award .section h2 {
@@ -196,7 +196,7 @@ body {
     gap: 2rem;
     margin-bottom: 2rem;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: #f8fafc;
     border-radius: 16px;
     border: 1px solid var(--glass-border);
     align-items: start;
@@ -206,7 +206,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid var(--glass-border);
     padding-left: 1.5rem;
 }
 
@@ -240,7 +240,7 @@ body {
 .hecto-award .cert-container {
     margin-top: 3rem;
     text-align: center;
-    background: rgba(0, 0, 0, 0.2);
+    background: #f1f5f9;
     padding: 2rem;
     border-radius: 16px;
 }
@@ -249,7 +249,7 @@ body {
     max-width: 70%;
     border-radius: 12px;
     border: 1px solid var(--glass-border);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 

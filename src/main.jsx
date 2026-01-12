@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './home.jsx'
+import './theme.css'
 // Import pages (assuming they export default components, otherwise we'll wrap them)
 import Persol from './experience/persol.jsx'
 import HdMedi from './experience/hdmid.jsx'
