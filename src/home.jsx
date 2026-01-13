@@ -53,7 +53,7 @@ export default function Home() {
                                 <div className="info-item">
                                     <span className="info-label">이력서</span>
                                     <Link to="/resume" className="info-value info-link">
-                                        View Resume (PDF Download)
+                                        이력서 보기
                                     </Link>
                                 </div>
                             </div>

@@ -26,7 +26,7 @@ export default function Neurodiversity() {
 
             {/* PROJECT MOTIVATION ========================= */}
             <section className="section">
-                <h2>Project Motivation</h2>
+                <h2>프로젝트 개요</h2>
                 <p>
                     기존 뉴로다이버시티협회 웹사이트는 WordPress 기반으로 제작되어 있어 구조가 복잡하고 유지보수 난이도가 높았습니다.<br />
                     콘텐츠 수정이나 신규 기능 추가 시 코드 접근이 제한적이었고, 협회가 원하는 방향으로 디자인·기능을 개선하기도 어려웠습니다.
@@ -39,7 +39,7 @@ export default function Neurodiversity() {
 
             {/* PROJECT OVERVIEW =========================== */}
             <section className="section">
-                <h2>Project Overview</h2>
+                <h2>프로젝트 소개</h2>
                 <p>
                     뉴로다이버시티협회는 <strong>장애인 대상 취업·고용 지원을 돕는 기관</strong>으로,<br />
                     장기적으로는 장애인을 위한 <strong>전문 취업 플랫폼(장애인용 잡코리아)</strong> 구축이 목표인 곳입니다.
@@ -76,7 +76,7 @@ export default function Neurodiversity() {
 
             {/* KEY FEATURES =============================== */}
             <section className="section">
-                <h2>Key Features</h2>
+                <h2>프로젝트 구현</h2>
                 <ul>
                     <li><strong>페이지네이션 (Pagination):</strong> 게시판 및 목록의 효율적인 탐색을 위한 페이징 기능 구현</li>
                     <li><strong>글 카테고리 분류:</strong> 뉴스, 공지사항, 칼럼 등 콘텐츠 성격에 따른 체계적인 분류 시스템</li>
@@ -86,7 +86,7 @@ export default function Neurodiversity() {
 
             {/* DEMO VIDEO ================================ */}
             <section className="section">
-                <h2>Project Demo</h2>
+                <h2>프로젝트 데모</h2>
                 <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px' }}>
                     <iframe
                         src="https://www.youtube.com/embed/mzNtAcX8tyU"
@@ -101,7 +101,7 @@ export default function Neurodiversity() {
 
             {/* COLLABORATIONs ============================= */}
             <section className="section">
-                <h2>Collaboration</h2>
+                <h2>협업툴</h2>
                 <p>
                     <strong>Git을 통한 비동기 협업:</strong><br />
                     후반부에는 프리랜서 형태로 근무하며 사무실에 상주하지 않았기 때문에,<br />
@@ -116,7 +116,7 @@ export default function Neurodiversity() {
 
             {/* RETROSPECTIVE ============================== */}
             <section className="section">
-                <h2>Retrospective</h2>
+                <h2>회고</h2>
 
                 <h3 style={{ fontSize: '1.4rem', color: 'var(--text-main)', marginTop: '2rem', marginBottom: '1rem' }}>아쉬웠던 점: Git 협업의 시행착오</h3>
                 <p>

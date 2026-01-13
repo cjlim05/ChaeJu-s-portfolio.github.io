@@ -44,7 +44,7 @@ export default function Resume() {
                     <section className="resume-section intro-section">
                         <div className="intro-card glass-card">
                             <p>👋 <strong>“풀스택 개발자 임채주입니다”</strong></p>
-                            <p>눈앞의 성과보다 꾸준한 성장에 가치를 두는 개발자입니다. 새로운 기술을 접하면 스스로 실습하며 동작 원리를 완전히 이해할 때까지 파고드는 습관을 가지고 있습니다. 소통과 기록을 중요하게 생각하며, 팀과 함께 성장하는 안정적인 시스템을 지향합니다.</p>
+                            <p>꾸준한 성장에 가치를 두는 개발자입니다. 새로운 기술을 접하면 스스로 실습하며 동작 원리를 완전히 이해할 때까지 파고드는 습관을 가지고 있습니다. 소통과 기록을 중요하게 생각하며, 팀과 함께 성장하는 안정적인 시스템을 지향합니다.</p>
                         </div>
                     </section>
 
